@@ -13,17 +13,24 @@ $targetFormat = 'n3';
 $urls[] = 'http://trustafriend.com/reviews/the-dog-toby-carvery-over-gloucester/';
 $urls[] = 'http://southernafricatravel.com/destination/south_africa/cape_town_peninsula/';
 
-echo '<h1>RDF Extractor</h1>';
-echo '<h2>Extraction-Report</h2>';
+echo '<h1>Extraction-Report</h1>';
 
 foreach ($urls as $url) {
 
-    echo '<h3>' . $url . '</h3>';
+    $responseExtraction = extractRdfFromUrl($url);
+    $data = $responseExtraction->getBody();
+    $responsePostData = postData($data);
 
-    $data = extractRdfFromUrl($url)->getBody();
-    $response = postData($data);
+    echo '<h2>' . $url . '</h2>';
+    echo '<img src="https://http.cat/'.$responsePostData->getStatusCode().'" height="200px"/>';
 
-    echo '<img src="https://http.cat/'.$response->getStatusCode().'" height="200px"/>"';
-    echo $response->getBody();
+    echo '<h3>Extraction</h3>';
+    echo '<b>Status:</b> ' . $responseExtraction->getReasonPhrase();
+
+    echo '<h3>Storage</h3>';
+    echo '<b>Status:</b> ' . $responsePostData->getReasonPhrase() . '<br />';
+    echo '<b>Message</b> ' . $responsePostData->getBody();
+
+    echo '<hr>';
 }
 ?>
