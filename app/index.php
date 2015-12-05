@@ -4,10 +4,6 @@ require 'vendor/autoload.php';
 
 require 'functions.php';
 
-/* config */
-$sourceFormat = 'detect';
-$targetFormat = 'n3';
-
 /* URLs */
 
 $urls[] = 'http://trustafriend.com/reviews/the-dog-toby-carvery-over-gloucester/';
