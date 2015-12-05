@@ -1,0 +1,15 @@
+{
+  "name": "EduGraph/Extractor",
+  "description": "RDF Extractor",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jonas Jetschni",
+      "email": "jetschni@fh-brandenburg.de"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.1"
+  }
+}

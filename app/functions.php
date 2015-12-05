@@ -1,65 +1,29 @@
 <?php
 
-function extractDocument($url){
+function extractRdfFromUrl($url){
+    $service = 'http://rdf-translator.appspot.com/convert';
+    $sourceFormat = 'detect';
+    $targetFormat = 'n3';
 
-    $serviceURL = 'http://rdf-translator.appspot.com/convert/detect/n3/';
+    $client = new GuzzleHttp\Client(['base_uri' => $service.'/'.$sourceFormat.'/'.$targetFormat.'/']);
 
-    $pageToExtract = $url;
+    $response = $client->request('GET', urlencode($url));
 
-    $curl = curl_init();
-    curl_setopt ($curl, CURLOPT_URL, $serviceURL.urlencode($pageToExtract));
-
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-
-    $result = curl_exec ($curl);
-
-    #$headerSent = curl_getinfo($curl, CURLINFO_HEADER_OUT ); // request headers
-
-    echo '<pre>';
-    #print_r($headerSent);
-    curl_close ($curl);
-    #print $result;
-    echo '</pre>';
-
-    return $result;
+    return $response;
 }
 
-function sendDataSparqlHTTP($data, $method){
-    $sparqlEndpoint = 'http://fbwsvcdev.fh-brandenburg.de:8080/fuseki/biseExtract/data?default';
 
-    $HTTPheader = array(
-        'Content-Type: text/turtle',
-        'Content-Length: ' . strlen($data)
-    );
+function postData($data){
 
-
-    $curl = curl_init();
-    curl_setopt ($curl, CURLOPT_URL, $sparqlEndpoint);
-
-    if($method == 'POST'){
-        curl_setopt($curl, CURLOPT_POST, 1);
-    }
-    elseif ($method == 'PUT'){
-        curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PUT");
-    }
-
-    curl_setopt($curl, CURLOPT_HTTPHEADER, $HTTPheader);
-
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+    $client = new GuzzleHttp\Client(['base_uri' => 'http://fbwsvcdev.fh-brandenburg.de:8080/fuseki/biseExtract/']);
+    $response = $client->request('POST', 'data?graph='.date("Y-m-d"), [
+        'headers' => [
+            'Content-Type' => 'text/turtle'
+        ],
+        'body' => $data
+    ]);
 
 
-    curl_setopt($curl, CURLINFO_HEADER_OUT, true); // enable tracking
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    return $response;
 
-    $result = curl_exec ($curl);
-
-    $headerSent = curl_getinfo($curl, CURLINFO_HEADER_OUT ); // request headers
-
-    echo '<pre>';
-    print_r($headerSent);
-
-    curl_close ($curl);
-
-    print $result;
-    echo '</pre>';
 }

@@ -1,5 +1,5 @@
 # EduGraph Extractor
 
-Based on [RDF translator](http://rdf-translator.appspot.com/) REST API and SPARQL HTTP Transfer Protocol
+Based on [RDF translator REST API](http://rdf-translator.appspot.com/) and [SPARQL 1.1 Graph Store HTTP Protocol](http://www.w3.org/TR/sparql11-http-rdf-update/).
 
-API calls with curl.
+Based on [Guzzle](https://github.com/guzzle/guzzle) HTTP client
