@@ -1,10 +1,4 @@
 <?php
-/**
- * User: jonas
- * Date: 05/12/15
- * Time: 20:13
- */
-
 require_once('functions.php');
 
 
