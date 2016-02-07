@@ -1,0 +1,32 @@
+<http://de.dbpedia.org/resource/Hochschule_Karlsruhe_–_Technik_und_Wirtschaft>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Hochschule_Karlsruhe_–_Technik_und_Wirtschaft>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Hochschule_Konstanz_Technik,_Wirtschaft_und_Gestaltung>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Hochschule_der_Medien_Stuttgart>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Hochschule_Hof>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Hochschule_Landshut>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Hochschule_Darmstadt>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Hochschule_Bonn-Rhein-Sieg>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Fachhochschule_Schmalkalden>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Hochschule_für_Technik_und_Wirtschaft_Dresden>
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/TH_Köln>
+        a       schema:CollegeOrUniversity .

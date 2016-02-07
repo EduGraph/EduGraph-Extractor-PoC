@@ -1,0 +1,86 @@
+dbpedia-de:Hochschule_Fulda
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Business_and_Information_Technology_School
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Technische_Hochschule_Deggendorf
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:EBZ_Business_School
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Fachhochschule_Wedel
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Wismar
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Fachhochschule_Flensburg
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Bremerhaven
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Merseburg
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Aalen
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Mainz
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Provadis_School_of_International_Management_and_Technology
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Universität_der_Bundeswehr_München
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Albstadt-Sigmaringen
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_für_Telekommunikation_Leipzig
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Fachhochschule_Erfurt
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_für_Technik_Stuttgart
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_für_angewandte_Wissenschaften_Landshut
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Wilhelm_Büchner_Hochschule
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Weserbergland
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Osnabrück
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_für_angewandte_Wissenschaften_Augsburg
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_Furtwangen
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_für_Technik_und_Wirtschaft_Dresden
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_RheinMain
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Fachhochschule_Brandenburg
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Fachhochschule_der_Wirtschaft
+        a       schema:CollegeOrUniversity .
+
+<http://de.dbpedia.org/resource/Technische_Hochschule_Wildau_(FH)>
+        a       schema:CollegeOrUniversity .
+
+dbpedia-de:Hochschule_für_Technik_und_Wirtschaft_Berlin
+        a       schema:CollegeOrUniversity .
